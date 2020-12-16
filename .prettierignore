@@ -1,0 +1,9 @@
+.log
+coverage
+
+dist
+index.js
+
+# Yarn 2
+.yarn
+.pnp.js

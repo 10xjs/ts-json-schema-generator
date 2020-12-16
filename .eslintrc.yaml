@@ -1,0 +1,25 @@
+extends: standard-with-typescript
+
+parser: "@typescript-eslint/parser"
+parserOptions:
+  project: ./tsconfig.json
+
+rules:
+  "@typescript-eslint/quotes": off
+  "@typescript-eslint/semi": off
+  "quotes": off
+  "semi": off
+  "comma-dangle": off
+  "@typescript-eslint/explicit-function-return-type": off
+  "no-void": off
+  "@typescript-eslint/space-before-function-paren": off
+  "space-before-function-paren": off
+  "@typescript-eslint/member-delimiter-style": off
+  "object-curly-spacing": off
+  "@typescript-eslint/indent": off
+
+overrides:
+  - files: "**/*.test.ts"
+    plugins:
+      - jest
+    extends: plugin:jest/all
